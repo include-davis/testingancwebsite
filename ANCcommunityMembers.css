@@ -1,0 +1,131 @@
+/* General page styling */
+* {
+  font-family: Helvetica, 'Aleo';
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #F0F8FF;
+}
+
+/* Body styling */
+.body_container {
+  padding: 3% 5% 0 5%;
+  color: #554D45;
+}
+
+.header {
+  margin-top: 90px; 
+  margin-left: 8.5%;
+  font-size: 40pt;
+}
+
+/* Textboxes */
+.text_box {
+  width: 80%;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+
+  border-radius: 30px;
+  background-color: #FFFFFF;
+}
+
+.view_more:hover {
+  text-decoration: underline;
+}
+
+/* Button */
+.view_more {
+  display: flex;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 457px;
+  height: 194px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.15);
+
+  color: #554D45;
+  text-decoration: none;
+
+  padding: 37px 71px;
+  border-radius: 30px;
+  
+  background-color: #FFF0BB;
+  
+  font-size: 24pt;
+}
+
+/* image */
+.erica {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 325px;
+  height: 300px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+/* text */
+.text_box p, ul, li{
+  font-size: 24pt;
+}
+
+
+/* NAVBAR STUFF */
+.header-container {
+  display: flex;
+  flex-direction:row;
+  background-color: #F0F8FF;
+  padding: 25px;
+  align-items: center;
+  font-family: Aleo, sans-serif;
+}
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.title-page {
+  margin-left: 2rem;
+  color: #554D45;
+}
+
+.navigation-container {
+  margin-left: auto;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.nav-btn {
+  margin-left: 1rem;
+  border: 0.1rem solid #C6E3FF;;
+  border-radius: 25px;
+  background-color: #F9F9F9;
+  padding: 7px;
+}
+
+/* Footer */
+.footer {
+  width: 65%;
+  margin-top: 175px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-style: italic;
+}

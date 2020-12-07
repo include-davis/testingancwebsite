@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html>
+   <body>
+   
+      <h3>Enter information about your new event!</h3>
+      <hr/>
+      
+      <form action = "{{ request.path }}" method = "post">
+         <label for = "eventname">Event Name</label><br>
+         <input type = "text" name = "eventname" placeholder = "Event Name" /><br>
+         <label for = "datetime">Date/Time</label><br>
+         <input type = "text" name = "datetime" placeholder = "Day Month Date, Year, Hour:MinAM/PM" /><br>
+         <label for = "location">Location</label><br>
+         <textarea name = "location" placeholder = "Location"></textarea><br>
+         <label for = "host">Host</label><br>
+         <input type = "text" name = "host" placeholder = "Host" /><br>
+         <label for = "category">Category</label><br>
+         <input type = "text" name = "category" placeholder = "Category" /><br>
+         <label for = "description">Description</label><br>
+         <textarea name = "description" placeholder = "What is this event about?"></textarea><br>
+         <label for = "link">Link</label><br>
+         <input type = "text" name = "link" placeholder = "Insert Zoom link here" /><br>
+         <input type = "submit" value = "Submit" />
+      </form>
+      
+   </body>
+</html>
+
+
+

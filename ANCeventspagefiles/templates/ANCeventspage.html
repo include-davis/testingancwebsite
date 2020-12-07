@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset = “utf-8”>
+		<title> Events and Meetings </title>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../static/css/ANCeventspage.css">
+	</head>
+
+    <div id="content">
+        <img src="../static/icons/image1.png" alt="ANC logo" style="top:1rem;margin-left:0.5rem;">
+        <div class="topleft">Autism and Neurodiversity Community </div>
+    </div>
+
+    <div class="topnav">
+        <a button class="navbtn home" href="#home"> Home</button></a>
+        <a button class="navbtn about us" href="#about-us"> About Us</button></a>
+        <a button class="navbtn support" href="#peer-support"> Peer Support</button></a>
+        <button class="navbtn active"> Events</button>
+        <a button class="navbtn resources" href="#resources"> Resources</button></a>
+        <a button class="navbtn members" href="#community-members"> Community Members</button></a>
+        <a button class="navbtn contact" href="#contact-us"> Contact Us</button></a>
+        <a button class="navbtn key terms" href="#key-terms"> Key Terms</button></a>
+    </div> 
+   <!--<header>Nav Bar</header>--> 
+
+	<body>	
+    <div class="top">
+        <h2> Events and Meetings </h2>
+        <p> Click on any event to join the meeting!</p>
+    </div>
+    
+    
+    <div class="filters-txt">
+        <!--can add more filter buttons here-->
+        <p> Filter by: <br>
+        <div id="eventfilters" style="margin-top: 10px;"> 
+            <button class="btn active" onclick="filterSelection('all')"> All</button>
+            <button class="btn" onclick="filterSelection('Club Meetings')"> Club Meetings</button>
+            <button class="btn" onclick="filterSelection('Trainings for Faculty/Staff')"> Trainings for Faculty/Staff</button>
+            <button class="btn" onclick="filterSelection('Special Events')"> Special Events</button>
+            <button class="btn" onclick="filterSelection('External')"> External</button>
+        </div>
+        </p>
+    </div>
+    <p>
+    	<div class= “myfilters”> 
+            <ul class="items">
+            {% for event in events %}
+            <li>
+            <div class="filterDiv {{ event.category }}">
+                <form action="{{ event.link }}">
+                <button class="rectangle">
+                    <div class="event-img">
+                    <img class="photo-btn" src="../static/icons/photo.jpg" alt="" />
+                    <div class="event-content">
+                    <h1>{{ event.eventname }}</h1>
+                    <div class="HC">
+                        <p style="font-size:150%"><img class="photo-clock" src="../static/icons/clock.jpg" alt="" /> 
+                            <p1 class="p1">
+                            {{ event.datetime }} 
+                            </p1>
+                        </p>
+                        <p style="font-size:150%">  <img  class="photo-loc" src="../static/icons/loc.png" alt="" /> 
+                            <p1 class="p1">
+                            {{ event.location }} 
+                            </p1>
+                        </p>
+                    </div>
+                    <p class="description">
+                        {{ event.description }}
+                    </p>
+                    <div class="HC">
+                        <p><b>Host: </b>{{ event.host }} </p>
+                        <p><b>Category: </b>{{ event.category }} </p>
+                    </div>
+                    </div>
+                </div>
+                </button>
+                </form>
+                </div>
+            </li>
+            {% endfor %}
+            </ul>
+		</div>
+    </p>
+    <script src="../static/js/ANCeventspage.js"></script>
+
+    </body>
+    
+
+	<footer>  
+            <p style="font-size:90%"> Note that the Autism & Neurodiversity Community at UC Davis is a group run 
+            by and for neurodivergent students. We are not part of the UC Davis administration. 
+            As such, the views expressed on this website should not be taken to reflect the 
+            positions of UC Davis. </p>
+    </footer>
+
+	
+
+</html> 

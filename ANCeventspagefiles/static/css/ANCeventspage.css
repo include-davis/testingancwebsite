@@ -1,0 +1,285 @@
+html {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+input:focus {
+  outline:none !important;
+}
+
+img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.topleft {
+  position: absolute;
+  top: 35px;
+  left: 100px;
+  font-size: 16px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  position: absolute;
+  right: 40px;
+  overflow: hidden;
+}
+
+/* adjust buttons */
+.navbtn {
+  margin-top: 10px;
+  font-size: 15px;
+  padding: 5px 12px;
+  background-color: #F9F9F9;
+  border-radius: 25px;
+  border: 0.1rem solid black;
+  border-color: #C6E3FF;
+  cursor: pointer;
+  text-decoration: none;
+  color:black;
+}
+
+.navbtn:hover {
+  background-color: rgb(219, 233, 255);
+}
+
+.navbtn.active {
+  background-color: #CFE2FF;
+}
+
+.navbtn.active:focus {outline:0;}
+
+.topnav {
+  top: 20px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin-left: 180px;
+  margin-right: 200px;
+  background-color: #F0F8FF;
+}
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+.top h2{
+  font-family: Helvetica; 
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;  
+  color: #554D45;
+  margin-top: 150px;
+  margin-bottom: 10px;
+}
+
+.top p{
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  /* identical to box height */
+  
+  
+  color: #554D45;
+
+  margin-bottom: 50px;
+}
+
+.rectangle{
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  margin-bottom: 25px;
+  border:2px solid rgb(200, 200, 200);
+  width: 900px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rectangle:focus {outline:0;}
+
+.rectangle h1{
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  color: #554D45;
+  margin-top: 23px;
+  margin-bottom: 12px;
+  
+}
+
+.rectangle p{
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #554D45;
+  
+}
+
+.rectangle img{
+  background: #FFF0BB;
+border-radius: 30px;
+border-width: 0px;
+}
+
+.myfilters ul{
+  display: flex;
+  
+}
+
+.items{
+  list-style: none;
+  padding-left: 0px;
+}
+
+.event-img{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 250px;
+  margin-left: 10px;
+  
+}
+
+.event-content{
+  margin-left: 20px;
+  text-align: left;
+}
+
+.event-content h1 {
+  margin-bottom: 1px;
+}
+
+.HC{
+  display: flex;
+  text-align: left;
+}
+
+.HC p{
+margin-right: 12px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.h1 {
+  margin-left: 10px;
+}
+
+.photo-btn {
+  position: relative;
+  left: 0px;
+  top: 1px;
+}
+
+.photo-clock {
+  position: relative;
+  left: 0px;
+  top: 1px;
+}
+
+.photo-loc {
+  position: relative;
+  left: 0px;
+  top: 1px;
+}
+
+.description {
+  width:700px;
+  word-wrap: break-word;
+}
+
+.myfilters{
+  display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+margin: 0px;
+border-radius: 3px;
+border:2px solid rgb(200, 200, 200);
+}
+
+
+.container {
+  margin-top:20px;
+  overflow: hidden;
+}
+
+.filterDiv {
+  float: left;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  position: static;
+  height: 45px;
+  left: 1005px;
+  top: 373px;
+  border: none;
+  border-radius: 4px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+
+}
+
+.btn:hover {
+  background-color: rgb(219, 233, 255);
+}
+
+.btn.active {
+  background-color: #CFE2FF;
+  color: #554D45;
+}
+
+.filters-txt{
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
+  color: #554D45;
+
+  margin-bottom: 110px;
+}
+
+.filters-txt button {
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #554D45;
+
+  white-space: nowrap;
+  margin: 9px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border:2px solid rgb(200, 200, 200);
+  cursor: pointer;
+/* identical to box height */
+}
+
+.filters-txt button:focus {
+  outline: 0;
+}
+
+

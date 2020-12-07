@@ -1,0 +1,263 @@
+/* CSS files add styling rules to your content */
+html, body {
+margin:0;
+padding:0;
+}
+
+
+button, input[type="submit"], input[type="reset"] {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+.title-page {
+  position: absolute;
+  top:2.5rem;
+  margin-left: 7rem;
+  color: #554D45;
+
+}
+
+.first-logo {
+  position:absolute;
+  top:1rem;
+  margin-left:.5rem;
+}
+
+.bck-img {
+  display:flex;
+  justify-content:center;
+  margin:0;
+  margin-top:50px;
+  padding:0;
+  
+}
+
+
+.navigation-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding-top:2rem;  
+}
+
+.home {
+  margin-left: 4rem;
+  border: 0.1rem solid black;
+  border-radius: 25px;
+  border-color:#CEE8FF;
+  background-color: #CEE8FF;
+  padding: 7px;
+  color: #554D45;
+}
+
+.aboutus {
+  margin-left: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 25px;
+  background-color: #F9F9F9;
+  border-color:#C6E3FF;
+  padding: 7px;
+  color: #554D45;
+}
+
+.peersupport {
+  margin-left: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 25px;
+  background-color: #F9F9F9;
+  border-color:#C6E3FF;
+  padding: 7px;
+  color: #554D45;
+}
+
+.commmembers {
+  margin-left: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 25px;
+  background-color: #F9F9F9;
+  border-color:#C6E3FF;
+  padding: 7px;
+  color: #554D45;
+}
+
+.members {
+  margin-left: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 25px;
+  background-color: #F9F9F9;
+  border-color:#C6E3FF;
+  padding: 7px;
+  color: #554D45;
+}
+
+.contactus {
+  margin-left: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 25px;
+  background-color: #F9F9F9;
+  border-color:#C6E3FF;
+  padding: 7px;
+  color: #554D45;
+}
+
+.events {
+  margin-left: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 25px;
+  background-color: #F9F9F9;
+  border-color:#C6E3FF;
+  padding: 7px;
+  color: #554D45;
+}
+
+.resources {
+  margin-left: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 25px;
+  background-color: #F9F9F9;
+  border-color:#C6E3FF;
+  padding: 7px;
+  color: #554D45;
+}
+
+.keyterms {
+  margin-left: 1rem;
+  border: 0.1rem solid black;
+  border-radius: 25px;
+  background-color: #F9F9F9;
+  border-color:#C6E3FF;
+  padding: 7px;
+  margin-right:1rem;
+  color: #554D45;
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  
+}
+
+.button-container{
+  display:flex;
+  justify-content:space-around;
+  margin-top: 68px;
+  
+}
+
+.label1{
+  
+  width: 363px;
+  height: 34px;
+
+
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 25px;
+
+  color: #554D45;
+}
+.label2{
+ 
+  width: 343px;
+  height: 34px;
+  
+
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 25px;
+
+  color: #554D45;
+}
+
+.button-container2{
+  display:flex;
+  justify-content:space-around;
+  margin-top:1px;
+}
+
+.button1 {
+  
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  color: #554D45;
+  line-height: 36px;
+  /*position: absolute;*/
+  width: 484px;
+  height: 85px;
+  /*left: 158px;
+  
+  top: 780px;*/
+
+  background: #CEE8FF;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 61px;
+}
+.button2 {
+
+  font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 36px;
+  color: #554D45;
+  /*position: absolute;*/
+  width: 517px;
+  height: 85px;
+  /*left: 780px;
+  top: 780px;*/
+
+  background: #FFF0BB;
+  box-shadow: 2px 4px 7px rgba(0, 0, 0, 0.15);
+  border-radius: 61px;
+}
+
+.footnote-container{
+  display:flex;
+  justify-content:center;
+
+}
+.footnote{
+ /* position: absolute;
+  width: 70%;
+  height: 34px;
+  bottom:0;
+  left: 12%;
+  padding-bottom:2rem;
+  */
+  padding-top:85px;
+  width:70%;
+  font-family: Helvetica;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+
+  color: #554D45;
+}
+
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+@media only screen and (max-width: 1300px) {
+  .navigation-container {
+    width: 100%;
+    padding-top:40px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+ 
